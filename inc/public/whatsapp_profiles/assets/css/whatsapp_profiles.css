@@ -1,0 +1,26 @@
+.wa-qr-code{
+	width: 285px;
+	height: 285px;
+	margin: auto;
+	position: relative;
+}
+
+.wa-qr-code .wa-reload{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 303px;
+	background-color: rgba(255,255,255,0.99);
+	display: none;
+}
+
+.wa-qr-code .wa-reload i{
+	font-size: 48px;
+}
+
+.wa-qr-code .wa-code img{
+	width: 100%;
+}

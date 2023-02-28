@@ -1,0 +1,572 @@
+:root {
+    --main-color: linear-gradient(to right,#49005e,#49005e);
+}
+.wrapper:after {
+    content: "Copyright © 2023";
+}
+.text-info {
+    color: var(--main-color)!important;
+}
+.loading-overplay {
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+}
+.loading-overplay .loader,
+.loading-overplay .loader:before,
+.loading-overplay .loader:after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  animation-fill-mode: both;
+  animation: bblFadInOut 1.8s infinite ease-in-out;
+}
+.loading-overplay .loader {
+  color: var(--main-color);
+  font-size: 7px;
+  position: relative;
+  text-indent: -9999em;
+  transform: translateZ(0);
+  animation-delay: -0.16s;
+  margin: 0 auto;
+  padding: inherit;
+  border: inherit;
+  display: inherit;
+  top: inherit;
+  left: inherit;
+  overflow: visible;
+}
+.loading-overplay .loader:before,
+.loading-overplay .loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+.loading-overplay .loader:before {
+  left: -3.5em;
+  animation-delay: -0.32s;
+}
+.loading-overplay .loader:after {
+  left: 3.5em;
+}
+.loading-overplay .loader > div {
+    display: none;
+}
+@keyframes bblFadInOut {
+  0%, 80%, 100% { box-shadow: 0 2.5em 0 -1.3em }
+  40% { box-shadow: 0 2.5em 0 0 }
+}
+body,
+.sidebar,
+.header {
+    background: var(--main-color);
+    border: none;
+}
+.sidebar .sidebar-toggle,
+.sidebar .menu .menu-separator,
+.sidebar .menu .menu-item .submenu > li > a > .menu-icon,
+.header .topbar .logo-small {
+    display: none;
+}
+.wrapper {
+    margin-top: 65px;
+    border-radius: 10px;
+    background: #F4F5FD;
+    width: calc(100% - 300px);
+    height: calc(100% - 90px);
+    overflow: hidden;
+}
+.wrapper:after {
+    position: fixed;
+    bottom: 4px;
+    right: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.subheader {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 10px 25px;
+    height: 70px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+    z-index: 999;
+    background: #fff;
+}
+.content-two-column .column-one,
+.content-two-column .column-two,
+.content-one-column {
+    background: #e280ff78;
+}
+.header {
+    padding-right: 25px;
+}
+.header .topbar {
+    width: 100%;
+}
+.header .topbar > div:first-child {
+    flex: 1;
+}
+.header .topbar .btn-info {
+    background-color: #ffb822;
+    border-color: #ffb822;
+}
+.header .topbar .btn-info:hover {
+    background-color: #ffe51f;
+    border-color: #ffe51f;
+}
+.header,
+.header .topbar .item > a {
+    color: #ffb822;
+}
+.header .topbar .item .dropdown .dropdown-toggle,
+.header .topbar .item:hover > a {
+    color: #fff;
+}
+.header .topbar .item .dropdown .dropdown-toggle {
+    line-height: 2;
+}
+.header .topbar .item .dropdown .dropdown-toggle:before {
+    content: "\e842";
+    font-family: 'feather';
+    float: right;
+    margin-left: 5px;
+}
+.header .topbar .item.item-user .dropdown .dropdown-toggle img {
+    float: left;
+    margin-right: 10px;
+    border: 1px solid #fff;
+    border-radius: 29px;
+}
+.header .topbar .item .dropdown .dropdown-menu {
+    top: 0px!important;
+    border-radius: 10px;
+}
+.sidebar .menu {
+    height: calc(100% - 105px);
+    margin-top: 10px;
+}
+.sidebar .menu .menu-item a {
+    color: #ffb822;
+    border: none;
+}
+.sidebar .menu .menu-item.active > a,
+.sidebar .menu .menu-item a:hover {
+    border: none;
+    background-color: rgba(255,255,255,.15)!important;
+    color: #e280ff!important;
+}
+.sidebar .menu .menu-item .submenu > li > a {
+    padding-left: 55px;
+}
+.sidebar .menu .menu-item.active .submenu > li.active > a {
+    background-color: #9c5db3!important;
+    color: #fcc135!important;
+}
+.dashboard.content-two-column .column-one {
+    display: none;
+}
+.dashboard.content-two-column .column-two {
+    width: 100%;
+    margin-left: 0;
+}
+.content-two-column .column-one,
+.content-two-column .column-two {
+    height: calc(100% - 60px);
+}
+.dashboard.content-two-column .column-two .rounded {
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 5%);
+    background: #fff!important;
+    border-radius: 6px!important;
+}
+.dashboard.content-two-column .column-two .rounded .wrap-c i {
+    font-size: 100px;
+    position: absolute;
+    right: -35px;
+    opacity: .5;
+}
+.dashboard.content-two-column .column-two > .m-auto {
+    max-width: 100%!important;
+}
+.dashboard.content-two-column .column-two .row h5 {
+    margin-top: 0!important;
+}
+.dashboard .fa-paper-plane {
+    font-family: 'Font Awesome 5 Brands';
+}
+.dashboard .fa-paper-plane:before {
+    content: "\f232";
+}
+.dashboard .table {
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 5%);
+}
+.dashboard .table .thead-dark th {
+    color: #555;
+    background-color: #e4e8fb;
+    border: none;
+}
+.campaing-reports.content-two-column .column-two,
+.link-generator.content-two-column .column-two,
+.settings.content-two-column .column-two,
+.account-manager.content-two-column .column-two,
+.file-manager.content-two-column .column-one,
+.user-manager.content-two-column .column-two,
+.language.content-two-column .column-two,
+.payment-manager.content-two-column .column-two,
+.blog-manager.content-two-column .column-two,
+.faqs-manager.content-two-column .column-two,
+.module.content-two-column .column-two,
+.social-network-configuration.content-two-column .column-two,
+.account-manager .column-one .btn-social,
+.social-network-configuration .search-list .item .actionItem {
+    background: #faebff;
+}
+.box-search-one input, .box-search-one button:first-child {
+    background: #fff!important;
+}
+.bulk-contact.content-two-column.content-two-column-right .column-two {
+    margin: 0;
+    width: 100%;
+}
+#bulk_contact_form input.form-control {
+    margin-bottom: 15px;
+}
+.whatsapp.content-one-column {
+    height: calc(100% - 70px);
+}
+.whatsapp .wa-menu {
+    padding-top: 5px;
+}
+.whatsapp .wa-menu,
+.wa-menu .wa-accounts,
+.wa-menu .wa-pages {
+    min-width: 80px;
+    max-width: 80px;
+}
+.wa-menu .wa-account-wrapper.active {
+    margin-left: -80px;
+}
+.whatsapp .wa-menu .navbar-brand-box {
+    display: none;
+}
+.whatsapp .wa-menu .wa-accounts .nav-item {
+    height: 42px;
+    width: 42px;
+}
+.whatsapp .wa-content .fa-mobile-alt {
+    font-family: 'Font Awesome 5 Brands';
+}
+.whatsapp .wa-content .fa-mobile-alt:before {
+    content: "\f232";
+}
+.whatsapp .wa-menu-nav .nav-item:after {
+    content: attr(title);
+    text-align: center;
+    display: block;
+    font-size: 8px;
+    padding: 0 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.whatsapp .wa-menu-nav .ri-user-2-line:before {
+    content: "\EE6F";
+}
+.whatsapp .wa-menu-nav .ri-plug-2-line:before {
+    content: "\EBAD";
+}
+.whatsapp .wa-menu .wa-menu-nav .nav-item .nav-link:hover {
+    background-color: rgba(0, 191, 165, 0.1);
+    color: #00bfa5;
+}
+.whatsapp .wa-bulk-schedules .row .wa-action-item {
+    display: none;
+}
+.whatsapp .wa-bulk-schedules .row .card {
+    border-radius: 6px;
+    overflow: hidden;
+}
+.whatsapp .wa-bulk-schedules .card-footer .row.m-t-50 .text-uppercase {
+    font-size: 12px;
+}
+.whatsapp #wa-types {
+    border: 1px solid #e2e5ec;
+    border-radius: 4px;
+    padding: 4px;
+}
+.whatsapp-profiles .widget-box-add-account {
+    max-width: 980px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: calc(100% + 140px);
+    box-sizing: content-box;
+}
+.whatsapp-profiles .widget-box-add-account > .wa-qr-code {
+    margin: 0 auto;
+    width: 35%;
+    height: 35%;
+}
+.whatsapp-profiles .widget-box-add-account > .list-group {
+    margin-left: 20px;
+    padding-left: 20px;
+    margin-top: 0!important;
+    flex: 1 1 50%;
+    width: 50%;
+    border-left: 1px solid #eee;
+}
+.whatsapp-profiles .wa-qr-code .wa-reload {
+    line-height: 2;
+    height: 120%;
+    padding-top: calc(50% - 50px);
+}
+.whatsapp-profiles .wa-qr-code .wa-reload a:after {
+    content: "Reload QR";
+    display: block;
+}
+.whatsapp-profiles .list-group-item {
+    margin-top: 10px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 5%);
+    border-radius: 6px!important;
+}
+.empty .icon {
+    background-image: url(https://i.ibb.co/02JZyHg/chatbot-illustration.png);
+    width: 200px;
+    height: 200px;
+    margin: 0;
+}
+.campaing-reports .nav .nav-link,
+.link-generator .nav .nav-link{
+    font-size: 16px;
+    color: inherit;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+}
+.campaing-reports .cprp_p_gral {
+    font-size: 18px;
+    font-weight: normal;
+    color: inherit;
+}
+.campaing-reports .form-row,
+.link-generator .form-row {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 4px;
+}
+.campaing-reports .cprp-r-avatar,
+.link-generator .cprp-r-avatar {
+    max-width: 60px;
+    margin-right: 10px;
+}
+.campaing-reports .form-row h5, .campaing-reports .form-row h6,
+.link-generator .form-row h5, .link-generator .form-row h6 {
+    font-size: 16px;
+}
+.wa_generator h1 {
+    font-size: 24px!important;
+}
+.wa_generator p {
+    font-size: 16px!important;
+    font-weight: normal!important;
+    display: inline;
+    margin: 0;
+    max-width: 100%!important;
+}
+.link-generator pre {
+    background: #333;
+    white-space: pre;
+    word-wrap: break-word;
+    overflow: auto;
+    margin: 0;
+    border-radius: 4px;
+    border: 1px solid #292929;
+    position: relative;
+}
+.link-generator pre code {
+    font-family: "Inconsolata","Monaco","Consolas","Andale Mono","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
+    display: block;
+    padding: 0 20px 20px;
+    overflow-x: auto;
+    font-size: 13px;
+    line-height: 19px;
+    color: #ddd;
+}
+.file-manager .fm-content .fm-item .fm-box {
+    background: #fff;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 5%);
+}
+.modal-backdrop {
+    z-index: 99998;
+}
+.modal {
+    z-index: 99999;
+}
+
+@media (max-width: 768px) {
+    .header .topbar {
+        justify-content: flex-end;
+    }
+    .header .topbar .logo-full {
+        text-align: center;
+        width: calc(100% - 170px);
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 9;
+        margin: 0 auto;
+    }
+    .header .topbar .logo-full img {
+        height: 45px;
+    }
+    .dashboard .subheader-main .subheader-toggle,
+    .whatsapp-profiles .subheader-main .subheader-toggle,
+    .profile.subheader .subheader-toggle {
+        display: none;
+    }
+    .subheader .title {
+        width: 100%;
+        display: flex;
+    }
+    .subheader-open .content-two-column .column-one {
+        background: #fff;
+    }
+    .header .topbar .item.item-user .dropdown .dropdown-toggle {
+        font-size: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .header .topbar .item.item-user .dropdown .dropdown-toggle img {
+        margin-right: -2px;
+    }
+    .sidebar-open .sidebar {
+        width: 100%;
+    }
+    .sidebar .logo {
+        display: none;
+    }
+    .sidebar .menu {
+        margin-top: 60px;
+        height: calc(100% - 60px);
+        overflow-y: auto!important;
+    }
+    .sidebar .sidebar-toggle {
+        display: block;
+        background: transparent!important;
+        border: none;
+        color: #fff!important;
+        right: inherit!important;
+        left: 75px!important;
+    }
+    .sidebar-open .sidebar .sidebar-toggle {
+        left: initial!important;
+        right: 10px!important;
+    }
+    .sidebar .sidebar-toggle i.ft-chevrons-left::before {
+        content: "\e88f";
+    }
+    .sidebar-open .sidebar .sidebar-toggle i.ft-chevrons-left::before {
+        content: "\e8f6";
+    }
+    .whatsapp .wa-menu {
+        left: 10px;
+        bottom: 35px;
+        max-width: calc(100% - 20px);
+        height: 70px;
+        border-radius: 10px;
+        padding: 0;
+        z-index: 999;
+    }
+    .wa-menu .wa-accounts, .wa-menu .wa-pages {
+        min-width: auto;
+        max-width: 100%;
+    }
+    .whatsapp .wa-menu-nav .nav-item:after {
+        display: none;
+    }
+    .wrapper:after {
+        width: 100%;
+        text-align: center;
+        right: 0;
+    }
+    .whatsapp-profiles .widget-box-add-account {
+        height: inherit;
+        max-width: 100%;
+        display: block;
+        box-sizing: border-box;
+    }
+    .whatsapp-profiles .widget-box-add-account > .wa-qr-code {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    .whatsapp-profiles .widget-box-add-account > .list-group {
+        width: 100%;
+        flex: 100%;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+    .wa-content {
+        position: relative;
+        background: #f5f7fb;
+    }
+    .wa-settings {
+        margin-right: 10px;
+    }
+    .wa-menu-nav .nav-item {
+        margin: 10px 0;
+    }
+    .wa-pages .wa-menu-nav .nav-item,
+    .wa-menu .wa-menu-nav .nav-item .nav-link.wa-back-account {
+        margin: 0;
+    }
+    .wa-menu .wa-pages .nav {
+        margin: 0!important;
+    }
+    .wa-menu .wa-account-wrapper.active {
+        margin-left: auto;
+    }
+    .whatsapp .wa-info {
+        margin-top: 5px!important;
+    }
+    .whatsapp.content-one-column > .h-100 {
+        height: auto!important;
+        padding-bottom: 70px;
+    }
+    .wa-content > .text-center {
+        background: #fff;
+        width: calc(100% - 25px)!important;
+        margin: 20px auto;
+        border-radius: 6px;
+        box-shadow: rgb(15 34 58 / 12%) 0px 2px 4px;
+    }
+    .wa-content > .text-center > .icon {
+        font-size: 70px;
+    }
+    .wa-content > .text-center > .detail > .desc {
+        font-size: 14px;
+    }
+    .wa-content > .text-center > .detail > .title {
+        font-size: 20px;
+    }
+    .content-one-column {
+        height: inherit!important;
+    }
+    .autoresponder_preview {
+        height: 600px;
+    }
+    .table th, .table td {
+        word-break: break-word;
+    }
+}

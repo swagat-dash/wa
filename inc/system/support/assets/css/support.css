@@ -1,0 +1,105 @@
+.support .btn-warning {
+    background-color: #ffb822;
+    border-color: #ffb822;
+    color: #fff;
+}
+
+.support .column-one {
+    width: 500px;
+}
+
+.support .column-two {
+    margin-left: 500px;
+    width: -webkit-calc(100% - 500px);
+    width: calc(100% - 500px);
+    background: #f8f9fa;
+}
+
+@media (max-width: 768px){
+    .support.content-two-column .column-one {
+        left: -500px;
+    }
+
+    .subheader-open .support .column-one {
+        width: 100%;
+        left: 0;
+    }
+
+    .content-two-column.support .column-two {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+.support .ticket-main{
+    max-width: 800px;
+    margin: auto;
+}
+
+.support .ticket-main .widget .widget-box{
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+    box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+}
+
+.support .cke_contents.cke_reset {
+    min-height: 300px;
+}
+
+.support .ticket-main .widget .widget-box .widget-action{
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.support .ticket-main .widget .widget-box:hover .widget-action{
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.support .ticket-main .widget .widget-box .widget-action .delete-ticket-item{
+    background: #fd397a;
+    color: #fff;
+    width: 30px;
+    height: 100%;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 0 3px 0 0;
+}
+
+.support .ticket-main .content img,
+.support .ticket-main .content iframe{
+    max-width: 100%
+}
+
+.support .accordion .card{
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f4f4f4!important;
+}
+
+.support .accordion .card .collapse{
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.support .accordion .card .card-header{
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.support .accordion .card .card-header .card-title{
+    color: #5d78ff;
+    cursor: pointer;
+}
+
+.support .accordion .card .card-header .card-title i{
+     color: #5d78ff;
+}
+
+.support .accordion.accordion-toggle-arrow .card .card-header .card-title.collapsed {
+    color: #74788d;
+}

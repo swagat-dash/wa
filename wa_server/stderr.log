@@ -1,0 +1,20 @@
+/home3/whatsaii/wa_server/node_modules/mysql/lib/protocol/Parser.js:437
+      throw err; // Rethrow non-MySQL errors
+      ^
+
+Error: ENOENT: no such file or directory, open '/home3/whatsai/public_html//assets/uploads/2b71ab211cff3c7ea7ec8eccf19f6963/24a92a77a50d4bb2ab59dc0f464cca6a.jpg'
+    at Object.openSync (fs.js:497:3)
+    at Object.readFileSync (fs.js:393:35)
+    at Object.send_auto_proccess (/home3/whatsaii/wa_server/wa.js:1:471799)
+    at /home3/whatsaii/wa_server/wa.js:1:441438
+    at Array.forEach (<anonymous>)
+    at Query.<anonymous> (/home3/whatsaii/wa_server/wa.js:1:428045)
+    at Query.<anonymous> (/home3/whatsaii/wa_server/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/home3/whatsaii/wa_server/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/home3/whatsaii/wa_server/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/home3/whatsaii/wa_server/node_modules/mysql/lib/protocol/sequences/Query.js:149:8) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/home3/whatsai/public_html//assets/uploads/2b71ab211cff3c7ea7ec8eccf19f6963/24a92a77a50d4bb2ab59dc0f464cca6a.jpg'
+}

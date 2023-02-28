@@ -1,0 +1,6 @@
+{
+    "require": {
+        "jeroendesloovere/vcard": "^1.7",
+        "keboola/csv": "^2.3"
+    }
+}
